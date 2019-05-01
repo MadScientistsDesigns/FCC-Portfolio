@@ -1,0 +1,95 @@
+/* CSS for Responsive Web Design Projects - Build a Personal Portfolio Webpage
+Elizabeth Hildreth
+4/29/2019 */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* User Story #10: The height of the welcome section should be equal to 
+    the height of the viewport */
+.welcome {
+    height: 779px;
+    background-image: url(software-3682509_1920.jpg);
+    background-repeat: repeat;
+    background-color: #525151;
+    background-position: center; /* Center the image */
+    background-blend-mode: screen;  
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+    padding-top: 30%;
+    font-size: 48px;
+}
+
+/* projects section */
+#projects {
+    background-image: url(software-3682509_1920.jpg);
+    background-repeat: repeat;
+    background-color: #525151;
+    background-position: center; /* Center the image */    
+    background-blend-mode: screen; 
+    margin-top: 0px; 
+}
+
+.card {
+    max-width: 320px; 
+    border: 1px solid darkslategray; 
+}
+
+.card-footer {
+    background-color: white;
+    width: 100%;
+}
+
+.button {
+    background-color: darkslategray;
+    border: none;
+    border-radius: 40%;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: rgb(23, 92, 34);
+    color: white;
+    text-decoration: none;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: auto;
+}
+
+/* contact section alignment */
+.contact {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.contact a {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* User Story #9: My portfolio should have at least one media query */
+@media (max-width: 520px) {
+    #projects {
+        background-repeat: repeat;
+    }
+    h1 {
+        padding-top: 60%;
+    }
+    .welcome {
+        height: 740px;
+    }
+}

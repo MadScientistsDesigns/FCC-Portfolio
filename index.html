@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Elizabeth Hildreth Personal Portfolio project">
+    <meta name="keywords" content="Elizabeth,Hildreth,programming,HTML,CSS,javascript,portfolio">
+    <meta name="author" content="Elizabeth Hildreth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elizabeth Hildreth Portfollio Website</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- User Story #6: My portfolio should have a navbar with an id of navbar -->
+    <!-- User Story #7: The navbar should contain at least one link that I can 
+        click on to navigate to different sections of the page. -->
+    <!-- User Story #11: The navbar should always be at the top of the viewport -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#">MadScientistsDesigns</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- User Story #1: My portfolio should have a welcome section with an id of 
+        welcome-section -->
+    <!-- User Story #2: The welcome section should have an h1 element that 
+        contains text -->
+    <section class="welcome" id="welcome-section">
+        <h1>Web Development</h1>
+        <h3>by Elizabeth Hildreth</h3>
+    </section>
+
+    <!-- User Story #3: My portfolio should have a projects section with an id of 
+            projects -->
+    <!-- User Story #4: The projects section should contain at least one element 
+            with a class of project-tile to hold a project -->
+    <!-- User Story #5: The projects section should contain at least one link 
+            to a project. -->
+    <section id="projects">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                
+            <div class="card-columns">
+                <div class="card-block text-left">
+                    <div class="card">
+                        <img src="product landing page.PNG" class="card-img-top" alt="Product Landing Page image">
+                        <div class="card-body project-tile">
+                            <h5 class="card-title">Product Landing Page</h5>
+                            <p class="card-text">Example product landing page I built for freeCodeCamp's
+                                Responsive Web Design Certification.</p>
+                            <div class="card-footer text-center">
+                                <a href="https://madscientistsdesigns.github.io/FCC-Product-Landing_Page_project/"
+                                    class="button">Check Me Out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="technical documentation page.PNG" class="card-img-top"
+                            alt="Tecnical Documentation Page image">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Documentation Page</h5>
+                            <p class="card-text">Example technical documentation page I built for freeCodeCamp's
+                                Responsive Web Design Certification.</p>
+                            <div class="card-footer text-center">
+                                <a href="https://madscientistsdesigns.github.io/FCC_Technical_Documentation_Page/"
+                                    class="button">Check Me Out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="survey form.PNG" class="card-img-top" alt="Survey Form image">
+                        <div class="card-body">
+                            <h5 class="card-title">FCC Survey Form</h5>
+                            <p class="card-text">Example survey form I built for freeCodeCamp's
+                                Responsive Web Design Certification.</p>
+                            <div class="card-footer text-center">
+                                <a href="https://madscientistsdesigns.github.io/FCC-Survey-Form/" class="button">Check
+                                    Me
+                                    Out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tribute page.PNG" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Tribute Page</h5>
+                            <p class="card-text">Example tribute page I built for freeCodeCamp's
+                                Responsive Web Design Certification.</p>
+                            <div class="card-footer text-center">
+                                <a href="https://madscientistsdesigns.github.io/GW-Toney-Tribute-Page/"
+                                    class="button">Check Me
+                                    Out!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end card-deck -->
+            </div><!-- end card-columns -->
+        </div>
+    </section><!-- end section - projects -->
+
+    <!-- User Story #8: My portfolio should have a link with an id of profile-link, 
+                which opens my GitHub or FCC profile in a new tab -->
+
+    <section class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <a id="profile-link" href="https://github.com/MadScientistsDesigns" target="_blank">
+            <img name="github" src="social-1_logo-github.svg" alt="GitHub icon"></a>
+        <a id="profile-link" href="https://twitter.com/TheMadCoder3" target="_blank">
+            <img src="social-1_logo-twitter.svg" alt="Twitter icon"></a>
+        <a id="profile-link" href="https://www.linkedin.com/in/elizabeththildreth/" target="_blank">
+            <img src="social-1_logo-linkedin.svg" alt="LinkedIn icon"></a>
+
+    </section>
+
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
